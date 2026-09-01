@@ -1,5 +1,9 @@
-const CACHE_NAME = "plant-watch-v1";
-const APP_SHELL = ["./", "./index.html", "./app.bundle.js", "./manifest.json"];
+const CACHE_NAME = "plant-watch-v2";
+const APP_SHELL = [
+  "./", "./index.html", "./app.bundle.js", "./manifest.json",
+  "./vendor/react.production.min.js", "./vendor/react-dom.production.min.js",
+  "./vendor/react-is.production.min.js", "./vendor/recharts.js",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
